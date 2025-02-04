@@ -38,7 +38,19 @@ public class Gambler {
       // Game logic
       while (pot > 0 && pot < goal) {
         // TO DO - Implement game logic
-
+        bets = bets + 1;
+        System.out.println("Bets: "+bets);
+        int throwResult = simulateThrow();
+        system.out.println(throwResult);
+      if (throwResult < 6)
+      {
+        pot = pot + 1;
+      }
+      else 
+      {
+        pot = pot - 1;
+      }
+      
       }
       if (pot == goal) {
         gameWins++;
